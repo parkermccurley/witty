@@ -16,7 +16,7 @@ export function getBearerToken(applicationKey) {
   };
 
   let bearerToken = request(options)
-    .then(body => body)
+    .then(body => JSON.parse(body).access_token)
     .catch(error => error)
 
   return bearerToken;
