@@ -22,6 +22,20 @@ export function getBearerToken(applicationKey) {
   return bearerToken;
 }
 
-export function search(bearerToken, query) {
+export function search(query, count, bearerToken) {
+  const urlQuery = encodeURIComponent(query);
+  const urlCount = encodeURIComponent(count);
+  const options = {
+    url: url + '/1.1/search/tweets.json?q=' + urlQuery + '&count=' + urlCount,
+    method: 'GET',
+    headers: {
+      'Authorization': 'Bearer ' + bearerToken
+    }
+  };
 
+  let tweets = request(options)
+    .then(body => JSON.parse(body))
+    .catch(error => error)
+
+  return tweets;
 }
