@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import cli from 'commander'
-import { exportCSV } from './tasks/export';
+import { exportCSV } from './tasks/export'
 
 cli
   .version('1.0.0')
