@@ -20,7 +20,6 @@
     "eqeqeq": [1, "smart"],
     "no-eq-null": 1,
     "no-loop-func": 1,
-    "no-magic-numbers": 2,
     "no-multi-spaces": 1,
     "no-redeclare": 2,
     "no-unused-expressions": 1,

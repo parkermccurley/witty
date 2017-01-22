@@ -14,7 +14,7 @@ export function exportCSV(query, count) {
         jsonTweets.push(tweetToJSON(tweet))
       })
       let csvData = jsonToCSV({data: jsonTweets, fields: csvFields})
-      writeFile('/Users/parker/Desktop/file.csv', csvData, error => {
+      writeFile('tweets.csv', csvData, error => {
         if (error) throw error
         console.log('File `file.csv` saved.')
       })
