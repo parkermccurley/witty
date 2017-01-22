@@ -1,12 +1,10 @@
 {
   "ecmaVersion": 6,
   "libs": [
-    "browser",
-    "chai"
+    "browser"
   ],
   "loadEagerly": [
-    "app/**/*.js",
-    "test/**/*.js"
+    "app/**/*.js"
   ],
   "plugins": {
     "complete_strings": {
