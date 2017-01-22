@@ -33,7 +33,7 @@ export function search(query, count, bearerToken) {
   }
 
   let tweets = request(options)
-    .then(body => JSON.parse(body))
+    .then(body => JSON.parse(body).statuses.length)
     .catch(error => error)
 
   return tweets
