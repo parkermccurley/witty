@@ -1,4 +1,4 @@
-# witty 
+# witty
 Twitter on Node
 
 ### Synopsis
@@ -15,6 +15,15 @@ The query searches the most recent tweets and returns them based on relevance.
 When a count is used, the results are limited to that amount.
 
 ### Notes
-`tweets.csv` will be saved in the directory that `witty` is run.
+* `tweets.csv` will be saved in the directory that `witty` is run.
+* For witty to work, a file named `core.js` must be placed in the `src/` folder
+with this format, referring to the auths needed by `https://api.twitter.com`.
+
+```javascript
+export default {
+  applicationKey: 'string dadada dadada dadada',
+  bearerToken: 'string dadada dadada dadada'
+}
+```
 
 Built with `everywhere.js`.
