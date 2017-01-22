@@ -10,9 +10,7 @@ export function exportCSV(query, count) {
   search(query, count, constants.bearerToken)
     .then(response => {
       let jsonTweets = []
-      response.forEach(tweet => {
-        jsonTweets.push(tweetToJSON(tweet))
-      })
+      response.forEach(tweet => jsonTweets.push(tweetToJSON(tweet)))
       let csvData = jsonToCSV({data: jsonTweets, fields: csvFields})
       writeFile('tweets.csv', csvData, error => {
         if (error) throw error
