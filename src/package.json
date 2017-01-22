@@ -1,0 +1,26 @@
+{
+  "name": "everywhere.js-system",
+  "version": "1.0.0",
+  "description": "Replace me with a description of your JavaScript utility.",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/parkertm/everywhere.js-system",
+    "type": "git"
+  },
+  "author": "parker mccurley",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-latest": "^6.16.0",
+    "chai": "^3.5.0",
+    "del": "^2.2.2",
+    "eslint": "^3.12.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^3.0.1",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "start": "gulp"
+  }
+}
