@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "commander": "^2.9.0",
+    "json2csv": "^3.7.3",
     "request": "^2.79.0",
     "request-promise": "^4.1.1"
   },
