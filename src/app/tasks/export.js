@@ -1,4 +1,4 @@
-import { search } from '../services/twitter.service.js'
+import { search } from '../services/twitter.service'
 import constants from '../core'
 import { tweetToJSON } from '../helpers/tweet.helper'
 import jsonToCSV from 'json2csv'
